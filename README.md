@@ -29,6 +29,7 @@ Difficulty: 3
 Different battle stations are located around the village. You will need to identify the outermost battles stations.
 Write an algorithm that returns an array of the outermost points of the 2d array.
 Example: 
+|---|---|---|---|---|---|---|---|
 |X||||||||
 ||||||X|||
 ||X|||||||
