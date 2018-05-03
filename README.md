@@ -48,6 +48,7 @@ Different battle stations are located around the village. You will need to ident
 * Expected Input: array of battlestations, battlestations are represented with x,y points. ex. [[0,0],[5,5]]
 * Expected Output: array of outermost battlestatations. ex. [[0,0],[5,5]]
 Example: 
+
 | X |   |   | X |   |   |
 |---|---|---|---|---|---|
 |   |   | X |   |   |   |
