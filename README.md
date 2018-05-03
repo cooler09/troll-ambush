@@ -10,8 +10,10 @@ A troll is approaching your village, you and your fellow villagers don't have mu
 The village has decided to setup traps in various points throughout the village. They decided the place them an X pattern. The top left being spring rolling spike traps, top right being punji stick pits, bottom left being corn flour explosives, and bottom right being spear traps.
 * Valid traps: ['spring_spear','corn_flour_explosive','punji_stick_pit','rolling_spikes']
 * Make sure not to place any traps that are not valid
-* Expected input: array or valid traps
-* Expected output: 10x10 2D array
+* When placing traps mark each trap with a special char. 'S' = 'spring_spear', 'C' = 'corn_flour_exploxive', 'P' = 'punji_stick_pit', 'R' = 'rolling_spikes'
+* Places on your map that don't have any traps marks with the char '_'
+* Expected input: array of valid traps
+* Expected output: 10x10 2D array with placed traps, representing the village map
 
 Location: "place_traps"
 
@@ -20,8 +22,8 @@ Location: "place_traps"
 As the troll approaches we will need to take inventory of all our items and weapons before he arrives. Create a hash that lists the name of the weapon and how many we have of that item.
 * Valid Weapons: ['arrow', 'bow', 'sword','mace','torch','shield', 'axe']
 * Make sure to declutter anything we don't need.
-* Expected input: array of weapons
-* Expected output: hash with each weapon and count
+* Expected input: array of weapons. ex. ['arrow','arrow','bow']
+* Expected output: hash with each weapon and count. ex. { 'arrow' => 2, 'bow' => 1 }
 
 Location: "take_inventory"
 
@@ -29,32 +31,23 @@ Location: "take_inventory"
 ###### Difficulty: 3
 Block entry points to the village! 
 * Valid Entryways: ["large","medium","small"].
-* Blocking materials: ex. {"boulder"=>3,"plank"=>2, "barrel"=>4}
+* Blocking materials: boulders, barrels, planks. ex. {"boulder"=>3,"plank"=>2, "barrel"=>4}
 * Large entryways take 1 boulder or 2 barrels or 4 planks to block
 * Medium entryways take 1 boulder or 1 barrel or 2 planks to block
 * Small entryways take 1 boulder or 1 barrel or 1 plank to block
-* Expected Input: array of entryways, hash table of blocking materials
-* Expected Output: boolean of whether we have the materials we need or not
+* Try not to overuse any materials, only use the minimum necessary!
+* Expected Input: array of entryways, hash table of blocking materials. ex. ['large','medium','small'], {'boulder' => 1, 'barrel'=>1,'plank'=>1}
+* Expected Output: boolean of whether we have the materials we need or not.
 
 Location: "barricade_entries"
 
 ### Find Battle Stations
 ##### Difficulty: 3 
-Different battle stations are located around the village. You will need to identify the outermost battles stations to take down the troll.
-Write an algorithm that returns an array of the outermost points of the 2d array.
+Different battle stations are located around the village. You will need to identify the outermost battles stations to take down the troll. Write an algorithm that returns an array of the outermost points of the 2d array.
+* The output array should only contain unique entries
 * Expected Input: array of battlestations, battlestations are represented with x,y points. ex. [[0,0],[5,5]]
 * Expected Output: array of outermost battlestatations. ex. [[0,0],[5,5]]
 Example: 
-<!-- |0|1|2|3|4|5|6|7|
-|---|---|---|---|---|---|---|---|
-|X||||||||
-||||||X|||
-||X|||||||
-||||X|||||
-|||||||||
-||X|||||X||
-|X||||||||
-||||X||||| -->
 | X |   |   | X |   |   |
 |---|---|---|---|---|---|
 |   |   | X |   |   |   |
