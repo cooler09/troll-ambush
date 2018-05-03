@@ -8,15 +8,16 @@ A troll is approaching your village, you and your fellow villagers don't have mu
 ### Take Inventory
 ##### Difficulty: 1-2
 As the troll approaches we will need to take inventory of all our items and weapons before he arrives.
-Make sure to declutter anything we don't need.
-Items we need ['arrow', 'bow', 'sword','mace','torch','shield', 'axe']
+* Make sure to declutter anything we don't need.
+* Items we need ['arrow', 'bow', 'sword','mace','torch','shield', 'axe']
 
 Location: "take_inventory"
 
 ### Barricade Entries
 ###### Difficulty: 3
 Block entry points to the village!
-Entries will come in as an array of strings. Valid types ["large","medium","small"]
+Entries will come in as an array of strings. 
+Valid types ["large","medium","small"]. 
 Items will come in as a hash table {"boulder"=>3,"plank"=>2, "barrel"=>4}
 * Large entryways can take 1 boulder or 2 barrels or 4 planks
 * Medium entryways can take 1 boulder or 1 barrel or 2 planks
