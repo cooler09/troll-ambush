@@ -1,7 +1,3 @@
-# Different battle stations are located around the village.
-# You need to solve the outermost battles stations
-# Write an algorithm that returns an array of the outermost points of the 2d array
-# Example: look at spec file for example data
 class Perimeter
     def calculate(array)
         final_array = []
