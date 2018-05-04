@@ -4,6 +4,13 @@ A troll is approaching your village, you and your fellow villagers don't have mu
 * Teams will have to work together to delegate tasks. They will need to do this so they are not trying to complete a task another team is working on. 
 * Once a task is completed it can no longer be completed by another team
 * Teams can only communicate to each other through their captains(excluding normal day to day talk)
+#### How to defeat the Troll
+Each task carries a difficulty, each difficulty puts you in a number range. If you complete the task the number range is increased, if you fail to complete you will use the standard number range
+* With 3 groups, you will need 26 points to stop the troll
+* With 4 groups you will need 32 points to stop the troll
+* Difficulty 1: failed=1-3 pass=4-5
+* Difficulty 2: failed=1-4 pass=5-6
+* Difficulty 3: failed=1-5 pass=6-7
 
 ### Place Traps
 ##### Difficulty: 1
@@ -43,9 +50,11 @@ Location: "barricade_entries"
 
 ### Find Battle Stations
 ##### Difficulty: 3 
-Different battle stations are located around the village. You will need to identify the outermost battles stations to take down the troll. Write an algorithm that returns an array of the outermost points of the 2d array.
+Different battle stations are located throughout the village(not just around the perimeter). You will need to identify the outermost battles stations to take down the troll. Write an algorithm that returns an array of the outermost points of the 2d array.
+* The function should handle different size 2d arrays as input and does not contain points that are not battlestations.
+* It can be assumes that anything passed in to the function is a battlestation
 * The output array should only contain unique entries
-* Expected Input: array of battlestations, battlestations are represented with x,y points. ex. [[0,0],[5,5]]
+* Expected Input: array of battlestations, battlestations are represented with x,y points. ex. [[0,0],[1,1],[5,5]]
 * Expected Output: array of outermost battlestatations. ex. [[0,0],[5,5]]
 Example: 
 
