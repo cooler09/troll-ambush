@@ -12,6 +12,20 @@ Each task carries a difficulty, each difficulty puts you in a number range. If y
 * Difficulty 2: failed=1-4 pass=5-6
 * Difficulty 3: failed=1-5 pass=6-7
 
+### Sharpen Weapons
+##### Difficulty: 1
+Weapons have different durability levels. Write a function to sharpen a weapon based on what the durability can handle. Each time you sharpen the weapon it's durability goes down.
+* A weapon's durability and type is determined on object initialization
+* If a weapon durability goes does to 0.0 the weapon is broken
+* A weapon cannot be initialized with more than 1.0 durability
+* A weapon cannot be initialized with less than 0.0 durability
+* Axe sharpen process takes 0.3 from the durability
+* Mace sharpen process takes 0.1 from the durability
+* Sword sharpen process takes 0.5 from the durability
+* Arrow sharpen process takes 0.7 from the durability
+* Expected Input: none
+* Expected Output: boolean indicating whether our sharpen process was successful or not
+
 ### Place Traps
 ##### Difficulty: 1
 The village has decided to setup traps in various points throughout the village. They decided the place them an X pattern. The top left being spring rolling spike traps, top right being punji stick pits, bottom left being corn flour explosives, and bottom right being spear traps.
