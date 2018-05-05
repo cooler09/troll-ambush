@@ -1,5 +1,5 @@
 # Troll Ambush
-A troll is approaching your village, you and your fellow villagers don't have much time before he crashes in and wreaks havoc. Your village decides to elect 3-4 captains that are in charge of small teams to stop the troll. Each team will have 2-3 chances to prepare for the troll. Each team's preparation will have a random factor to the final effectiveness agianst the troll. 
+A troll is approaching your village, you and your fellow villagers don't have much time before he crashes in and wreaks havoc. Your village decides to elect 3-4 captains that are in charge of small teams to stop the troll. Each team will have 2-3 chances to prepare for the troll. Each team's preparation will have a random factor to the final effectiveness against the troll. 
 * Unfinished tasks will still count toward the final goal, but completed tasks are much more effective
 * Teams will have to work together to delegate tasks. They will need to do this so they are not trying to complete a task another team is working on. 
 * Once a task is completed it can no longer be completed by another team
@@ -65,11 +65,11 @@ Location: "barricade_entries"
 ### Find Battle Stations
 ##### Difficulty: 3 
 Different battle stations are located throughout the village(not just around the perimeter). You will need to identify the outermost battles stations to take down the troll. Write an algorithm that returns an array of the outermost points of the 2d array.
-* The function should handle different size 2d arrays as input and does not contain points that are not battlestations.
-* It can be assumes that anything passed in to the function is a battlestation
+* The function should handle different size 2d arrays as input and does not contain points that are not battle stations.
+* It can be assumes that anything passed in to the function is a battle station
 * The output array should only contain unique entries
-* Expected Input: array of battlestations, battlestations are represented with x,y points. ex. [[0,0],[1,1],[5,5]]
-* Expected Output: array of outermost battlestatations. ex. [[0,0],[5,5]]
+* Expected Input: array of battle stations, battle stations are represented with x,y points. ex. [[0,0],[1,1],[5,5]]
+* Expected Output: array of outermost battle statations. ex. [[0,0],[5,5]]
 Example: 
 
 | X |   |   | X |   |   |
